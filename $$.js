@@ -27,7 +27,7 @@ function $$(array){
         
         },
         set:function(x,y,z){
-            if(!y.toString().match(/^\u{2d}{0,1}[0-9]+$/u)){
+            if(y.toString().match(/\:/)){
                 var tmp=[];
                 var toAssign=Array.from(z);
                 for(let i=0;i<array.length;i++){
